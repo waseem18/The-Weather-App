@@ -12,6 +12,13 @@ handlers:
 - url: .*
   script: main.app
 
+<<<<<<< HEAD
+=======
+- url: /templates/stylesheets
+  static_dir: stylesheets
+
+
+>>>>>>> 81fea3c7fa2e0ceeee558b2a97983fb9c0e47667
 libraries:
 - name: jinja2
   version: latest
