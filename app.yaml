@@ -1,4 +1,4 @@
-application: urls
+application: the-weather-app
 version: 1
 runtime: python27
 api_version: 1
@@ -11,9 +11,6 @@ handlers:
 
 - url: .*
   script: main.app
-
-- url: /templates/stylesheets
-  static_dir: stylesheets
 
 libraries:
 - name: jinja2

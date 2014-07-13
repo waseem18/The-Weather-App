@@ -1,6 +1,3 @@
-#Author: Wasim Thabraze
-#Ping in me a pull request to report bugs and to add new features!
-
 import webapp2
 import jinja2
 import os
@@ -37,7 +34,7 @@ class MainHandler(BaseHandler):
         temp = temparature-273
         temp_min = data['main']['temp_min'] - 273
         temp_max = data['main']['temp_max'] - 273
-        self.render('result.html',country=country,temp=temp,temp_min=temp_min,temp_max=temp_max,weather=weather,town=town,pressure=pressure,humidity=humidity)
+        self.render('weather.html',country=country,temp=temp,temp_min=temp_min,temp_max=temp_max,weather=weather,town=town,pressure=pressure,humidity=humidity)
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
